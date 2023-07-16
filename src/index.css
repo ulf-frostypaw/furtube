@@ -1,0 +1,13 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  /* DEFINIR QUE COLORES USAR CORRECTAMENTE EN LA MARCA. SOLO BG*/
+  /*background: #000; */
+}
+body{
+  font-family: 'Walter Turncoat', cursive;
+}
