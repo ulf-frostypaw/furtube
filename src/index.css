@@ -6,8 +6,9 @@
 }
 html{
   /* DEFINIR QUE COLORES USAR CORRECTAMENTE EN LA MARCA. SOLO BG*/
-  /*background: #000; */
+  /*background: #15151d;*/
 }
 body{
   font-family: 'Walter Turncoat', cursive;
+  transition-duration: 500ms;
 }

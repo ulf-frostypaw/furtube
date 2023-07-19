@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import {HiFire} from 'react-icons/hi'
+import {FaClock, FaSearch} from 'react-icons/fa'
 const Header = () => {
 	return(
 		<nav className="navbar" role="navigation" aria-label="main navigation">
@@ -17,13 +18,24 @@ const Header = () => {
 
 		  <div id="navbarBasicExample" className="navbar-menu">
 		    <div className="navbar-start">
-		      <Link to="/trending" class="navbar-item"><HiFire />Tendencias</Link>
-		      <div className="control"><input className="input is-rounded" type="text" placeholder="Search anything" /></div>
+		      	<Link to="/trending" class="navbar-item"><HiFire />Tendencias</Link>
+		       	<Link to="/latest" class="navbar-item">Recientes</Link>
+		       	<Link to="/blog" class="navbar-item">Blog</Link>
+		      <div className="is-align-self-center">
+		      	<form method="GET" action="/search">
+		      		<p class="control has-icons-left">
+			      		<span class="icon is-small is-left">
+					    	<FaSearch />
+					    </span>
+		      			<input type="search" name="q" className="input is-shadowless"  placeholder="Search anything..."/>
+		      		</p>
+		      	</form>
+		      </div>
 		    </div>
 		    <div className="navbar-end">
 		      <div className="navbar-item">
 		        <div className="buttons">
-		          <Link className="button is-primary">
+		          <Link to="/register" className="button is-primary">
 		            <strong>Sign up</strong>
 		          </Link>
 		          <Link to="/login" className="button is-light">
