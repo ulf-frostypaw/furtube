@@ -1,9 +1,10 @@
 import Layout from '../components/Layout';
+// BUG: encontrar porque no se solicita el ID del contenido
 
-const Video = ({ video_id }) => {
+const Video = (props) => {
 	return(
-		<Layout title={video_id}>
-			<h2>Video: {video_id}</h2>
+		<Layout title="AQUÍ VA EL TITULO PERONALIZADO">
+			<h2>Video: {props.match.params.video_id}</h2>
 		</Layout>
 	)
 }

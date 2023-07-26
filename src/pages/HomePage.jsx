@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import {FaClock, FaStar} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
+// FETCH ALL DATA FROM DB WITH AXIOS
+//import {axios} from 'axios'
 
 import VideoThumb from '../components/VideoThumb'
 const Home = () => {

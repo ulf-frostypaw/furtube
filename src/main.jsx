@@ -9,8 +9,10 @@ import './index.css'
 import Home from './pages/HomePage'
 import Trending from './pages/TrendingPage'
 import Latest from './pages/LatestPage'
+import Plus from './pages/Plus'
 import Video from './pages/VideoPage.jsx'
 import Login from './pages/forms/Login'
+import Register from './pages/forms/Register'
 import Error404 from './pages/Error404'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,8 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 	    	<Route exact path='/' element={<Home />} />
 	    	<Route exact path='/trending' element={<Trending />} />
 	    	<Route exact path='/latest' element={<Latest />} />
+	    	<Route exact path='/plus' element={<Plus />} />
 	    	<Route exact path='/login' element={<Login />} />
-	    	<Route path ="/video/:video_id" element={<Video />} />
+	    	<Route exact path='/register' element={<Register />} />
+	    	<Route path ="/video/:video_id" element={<Video />} /> {/* DISCRIMAR SOLO PARA: A-Z a-z 0-9 -_*/}
 	    	<Route path='*' element={<Error404 />} />
 	    </Routes>
 	  </BrowserRouter>

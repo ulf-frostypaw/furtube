@@ -20,7 +20,7 @@ const Header = () => {
 		    <div className="navbar-start">
 		      	<Link to="/trending" class="navbar-item"><HiFire />Tendencias</Link>
 		       	<Link to="/latest" class="navbar-item">Recientes</Link>
-		       	<Link to="/blog" class="navbar-item">Blog</Link>
+		       	<Link to="/plus" class="navbar-item">Furtube +</Link>
 		      <div className="is-align-self-center">
 		      	<form method="GET" action="/search">
 		      		<p class="control has-icons-left">
