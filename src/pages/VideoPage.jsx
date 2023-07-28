@@ -1,10 +1,16 @@
 import Layout from '../components/Layout';
 // BUG: encontrar porque no se solicita el ID del contenido
+import React from 'react';
+import { Player } from 'video-react';
+import { useParams } from 'react-router-dom';
 
-const Video = (props) => {
+const Video = () => {
+	const { video_id } = useParams();
 	return(
-		<Layout title="AQUÍ VA EL TITULO PERONALIZADO">
-			<h2>Video: {props.match.params.video_id}</h2>
+		<Layout title={video_id}>
+			<Player>
+		    	<source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+		    </Player>
 		</Layout>
 	)
 }

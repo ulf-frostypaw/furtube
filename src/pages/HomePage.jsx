@@ -9,7 +9,7 @@ const Home = () => {
 	return(
 		<Layout title="Inicio">
 			<div className="container p-4">
-				<div class="box has-background-link"><h3 className="title is-3 has-text-white">Furtube - Nuevas caracteristicas</h3><span className="has-text-white">Grandes cosas están por venir. OwO</span></div>
+				<div className="box has-background-link"><h3 className="title is-3 has-text-white">Furtube - Nuevas caracteristicas</h3><span className="has-text-white">Grandes cosas están por venir. OwO</span></div>
 				<div className="is-flex-desktop is-justify-content-space-between is-align-items-baseline">
 					<div>
 						<h1 className="title"><FaStar /> Contenido destacado</h1>
