@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import {Link} from 'react-router-dom'
+import {FaArrowRight} from 'react-icons/fa'
 /*
  :root {
       --brandColor: hsl(166, 67%, 51%);
@@ -92,55 +93,36 @@ const Register = () => {
 			        <div className="column is-8 is-offset-2 register">
 			          <div className="columns">
 			            <div className="column left">
-			              <h1 className="title is-1">Super Cool Website</h1>
-			              <h2 className="subtitle colored is-4">Lorem ipsum dolor sit amet.</h2>
-			              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
+			              <h1 className="title is-1">Furtube</h1>
+			              <h2 className="subtitle colored is-4">Un lugar para compartir tu creatividad</h2>
+			              <p>Porque a todos nos gustaría saber que tienes para compartir con todos nosotros.</p>
 			            </div>
 			            <div className="column right has-text-centered">
-			              <h1 className="title is-4">Sign up today</h1>
-			              <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+			              <h1 className="title is-4">Registrate</h1>
+			              <p className="description">Ingresa tus datos para iniciar tu registro</p>
 			              <form>
 			                <div className="field">
 			                  <div className="control">
-			                    <input className="input is-medium" type="text" placeholder="Name" />
+			                    <input className="input is-medium" type="text" placeholder="Username" />
 			                  </div>
 			                </div>
 
 			                <div className="field">
 			                  <div className="control">
-			                    <input className="input is-medium" type="email" placeholder="Email" />
+			                    <input className="input is-medium" type="email" placeholder="Correo electronico" />
 			                  </div>
 			                </div>
-			                <button className="button is-block is-primary is-fullwidth is-medium">Submit</button>
+			                <button className="button is-block is-primary is-fullwidth is-medium">
+                      <span className="icon-text">
+                        <span>Comenzar</span>
+                        <span className="icon"><FaArrowRight /></span>
+                      </span>
+                      </button>
 			                <br />
-			                <small><em>Lorem ipsum dolor sit amet consectetur.</em></small>
+			                <small><Link to="/login">¿Ya tienes una cuenta?</Link></small>
 			              </form>
 			            </div>
 			          </div>
-			        </div>
-			        <div className="column is-8 is-offset-2">
-			          <br />
-			          	<nav className="level">
-				            <div className="level-left">
-				              <div className="level-item">
-				                <span className="icon">
-				                  <i className="fab fa-twitter"></i>
-				                </span> &emsp;
-				                <span className="icon">
-				                  <i className="fab fa-facebook"></i>
-				                </span> &emsp;
-				                <span className="icon">
-				                  <i className="fab fa-instagram"></i>
-				                </span> &emsp;
-				                <span class="icon">
-				                  <i class="fab fa-github"></i>
-				                </span> &emsp;
-				                <span class="icon">
-				                  <i class="fas fa-envelope"></i>
-				                </span>
-				              </div>
-				            </div>
-			          	</nav>
 			        </div>
 
 			    </div>

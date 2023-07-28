@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import {HiFire} from 'react-icons/hi'
 import {FaClock, FaSearch} from 'react-icons/fa'
 const Header = () => {
@@ -18,9 +18,32 @@ const Header = () => {
 
 		  <div id="navbarBasicExample" className="navbar-menu">
 		    <div className="navbar-start">
-		      	<Link to="/trending" class="navbar-item"><HiFire />Tendencias</Link>
-		       	<Link to="/latest" class="navbar-item">Recientes</Link>
-		       	<Link to="/plus" class="navbar-item">Furtube +</Link>
+			    <NavLink
+				  to="/trending"
+				  className={({ isActive,}) =>
+				    isActive ? "has-text-link navbar-item" : "navbar-item"
+				  }
+				>
+				<span className="icon"><HiFire /></span>
+				  <span>Tendencias</span>
+				</NavLink>
+				<NavLink
+					to="/latest"
+						className={({ isActive,}) =>
+							isActive ? "has-text-link navbar-item" : "navbar-item"
+						}
+					>
+					<span className="icon"><FaClock /></span>
+					<span>Recientes</span>
+				</NavLink>
+				<NavLink
+					to="/plus"
+						className={({ isActive,}) =>
+							isActive ? "has-text-link navbar-item" : "navbar-item"
+						}
+					>
+					<span>Furtube +</span>
+				</NavLink>
 		      <div className="is-align-self-center">
 		      	<form method="GET" action="/search">
 		      		<p class="control has-icons-left">
