@@ -7,18 +7,23 @@ import {AiFillHeart} from 'react-icons/ai'
 import {FaEye} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 
+import eBlob from './eBlob'
+
 const Video = () => {
 	const { video_id } = useParams();
+	const videoUrl = 'http://127.0.0.1:5173/storage/videos/trailer_hd.mp4'
+	//const videoObjectURL = eBlob(videoUrl); 
 	return(
 		<Layout title={video_id}>
 			<div className="container p-4 mx-auto">
 				<div className="columns is-multiline">
 					<div className="column is-three-quarters-desktop is-full-tablet">
 						<div className="player-box">
+
 						<Player>
-				    		<source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+				    		<source type="video/mp4" src={videoUrl} />
 				    	</Player>
-				    		<div class="box">
+				    		<div className="box">
 				    			<div className="columns is-multiline" id="medium-info">
 				    				<div className="column is-full">
 				    					<h1 className="is-size-4 has-text-weight-light has-text-white">Este es mi video épico</h1>
