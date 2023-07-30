@@ -14,6 +14,7 @@ import Plus from './pages/Plus'
 import Video from './pages/VideoPage.jsx'
 import Login from './pages/forms/Login'
 import Register from './pages/forms/Register'
+import User from './pages/profile/User'
 
 import Landing from './pages/Landing'
 import Error404 from './pages/Error404'
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 	    	<Route exact path='/register' element={<Register />} />
 	    	<Route exact path='/landing' element={<Landing />} />
 	    	<Route path ="/video/:video_id" element={<Video />} /> {/* DISCRIMAR SOLO PARA: A-Z a-z 0-9 -_*/}
+	    	<Route path="/user/:username" element={ <User /> } />
 	    	<Route path='*' element={<Error404 />} />
 	    </Routes>
 	  </BrowserRouter>

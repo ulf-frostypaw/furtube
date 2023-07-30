@@ -4,7 +4,7 @@ import React from 'react';
 import { Player } from 'video-react';
 import { useParams } from 'react-router-dom';
 import {AiFillHeart} from 'react-icons/ai'
-import {FaEye} from 'react-icons/fa'
+import {FaEye, FaPaw} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 
 import eBlob from './eBlob'
@@ -23,10 +23,28 @@ const Video = () => {
 						<Player>
 				    		<source type="video/mp4" src={videoUrl} />
 				    	</Player>
-				    		<div className="box">
+				    	<div className="py-2 is-flex is-justify-content-space-between is-align-items-center">
+				    		<div id="stats_counters">
+				    			<div className="is-hidden-mobile is-flex">
+				    				<p className="mr-4 is-size-6 has-text-weight-light has-text-lighter-1">100 <span className="">Views</span></p>
+				    				<p className="mr-4 is-size-6 has-text-weight-light has-text-lighter-1">100 <span className="">Like</span></p>
+				    				<p className="mr-4 is-size-6 has-text-weight-light has-text-lighter-1">100 <span className="">Comentarios</span></p>
+				    			</div>
+				    		</div>
+				    		<button className="button is-small is-underlined-button js-modal-trigger">
+				    			<p className="ml-1">Like this video</p>
+				    		</button>
+				    	</div>
+				    		<div className="medium-info">
 				    			<div className="columns is-multiline" id="medium-info">
 				    				<div className="column is-full">
-				    					<h1 className="is-size-4 has-text-weight-light has-text-white">Este es mi video épico</h1>
+				    					<h1 className="is-size-4 has-text-weight-light">Este es mi video épico</h1>
+				    					<span className="is-size-6 icon"><FaPaw /></span>
+				    					<Link to="/user/username">Username</Link>
+				    					<span className="pl-1 is-size-7 has-text-lighter-2">2d</span>
+				    				</div>
+				    				<div className="column is-full">
+				    					<p className="is-size-6 has-white-space-pre-wrap has-text-lighter-1">Lorem ipsum dolor sit amet, consectetur owoowowo</p>
 				    				</div>
 				    			</div>
 				    		</div>
